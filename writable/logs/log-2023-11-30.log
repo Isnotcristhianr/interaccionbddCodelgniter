@@ -1,0 +1,1158 @@
+ERROR - 2023-11-30 00:00:44 --> mysqli_sql_exception: Unknown column 'a.con_id_tema' in 'on clause' in C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `a`.`con...', 0)
+#1 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`con...')
+#2 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`con...')
+#3 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con...', Array, false)
+#4 C:\xampp\htdocs\proyectoTresBdd\app\Models\portadaModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyectoTresBdd\app\Controllers\Home.php(18): App\Models\portadaModel->contenidoModel()
+#6 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#7 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\proyectoTresBdd\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-30 00:00:44 --> Unknown column 'a.con_id_tema' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con_contenido`, `b`.`tem_tema`
+FROM `tbl_contenido` `a`
+JOIN `tbl_tema` `b` ON `a`.`con_id_tema`=`b`.`tem_id`', [], false)
+ 2 APPPATH\Models\portadaModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(18): App\Models\portadaModel->contenidoModel()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-30 00:00:45 --> mysqli_sql_exception: Unknown column 'a.con_id_tema' in 'on clause' in C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `a`.`con...', 0)
+#1 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`con...')
+#2 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`con...')
+#3 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con...', Array, false)
+#4 C:\xampp\htdocs\proyectoTresBdd\app\Models\portadaModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyectoTresBdd\app\Controllers\Home.php(18): App\Models\portadaModel->contenidoModel()
+#6 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#7 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\proyectoTresBdd\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-30 00:00:45 --> Unknown column 'a.con_id_tema' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con_contenido`, `b`.`tem_tema`
+FROM `tbl_contenido` `a`
+JOIN `tbl_tema` `b` ON `a`.`con_id_tema`=`b`.`tem_id`', [], false)
+ 2 APPPATH\Models\portadaModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(18): App\Models\portadaModel->contenidoModel()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-30 00:00:45 --> mysqli_sql_exception: Unknown column 'a.con_id_tema' in 'on clause' in C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `a`.`con...', 0)
+#1 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`con...')
+#2 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`con...')
+#3 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con...', Array, false)
+#4 C:\xampp\htdocs\proyectoTresBdd\app\Models\portadaModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyectoTresBdd\app\Controllers\Home.php(18): App\Models\portadaModel->contenidoModel()
+#6 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#7 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\proyectoTresBdd\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-30 00:00:45 --> Unknown column 'a.con_id_tema' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con_contenido`, `b`.`tem_tema`
+FROM `tbl_contenido` `a`
+JOIN `tbl_tema` `b` ON `a`.`con_id_tema`=`b`.`tem_id`', [], false)
+ 2 APPPATH\Models\portadaModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(18): App\Models\portadaModel->contenidoModel()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-30 00:00:45 --> mysqli_sql_exception: Unknown column 'a.con_id_tema' in 'on clause' in C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `a`.`con...', 0)
+#1 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`con...')
+#2 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`con...')
+#3 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con...', Array, false)
+#4 C:\xampp\htdocs\proyectoTresBdd\app\Models\portadaModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyectoTresBdd\app\Controllers\Home.php(18): App\Models\portadaModel->contenidoModel()
+#6 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#7 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\proyectoTresBdd\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-30 00:00:45 --> Unknown column 'a.con_id_tema' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con_contenido`, `b`.`tem_tema`
+FROM `tbl_contenido` `a`
+JOIN `tbl_tema` `b` ON `a`.`con_id_tema`=`b`.`tem_id`', [], false)
+ 2 APPPATH\Models\portadaModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(18): App\Models\portadaModel->contenidoModel()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-30 00:00:45 --> mysqli_sql_exception: Unknown column 'a.con_id_tema' in 'on clause' in C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `a`.`con...', 0)
+#1 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`con...')
+#2 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`con...')
+#3 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con...', Array, false)
+#4 C:\xampp\htdocs\proyectoTresBdd\app\Models\portadaModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyectoTresBdd\app\Controllers\Home.php(18): App\Models\portadaModel->contenidoModel()
+#6 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#7 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\proyectoTresBdd\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-30 00:00:45 --> Unknown column 'a.con_id_tema' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con_contenido`, `b`.`tem_tema`
+FROM `tbl_contenido` `a`
+JOIN `tbl_tema` `b` ON `a`.`con_id_tema`=`b`.`tem_id`', [], false)
+ 2 APPPATH\Models\portadaModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(18): App\Models\portadaModel->contenidoModel()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-30 00:00:46 --> mysqli_sql_exception: Unknown column 'a.con_id_tema' in 'on clause' in C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `a`.`con...', 0)
+#1 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`con...')
+#2 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`con...')
+#3 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con...', Array, false)
+#4 C:\xampp\htdocs\proyectoTresBdd\app\Models\portadaModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyectoTresBdd\app\Controllers\Home.php(18): App\Models\portadaModel->contenidoModel()
+#6 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#7 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\proyectoTresBdd\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-30 00:00:46 --> Unknown column 'a.con_id_tema' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con_contenido`, `b`.`tem_tema`
+FROM `tbl_contenido` `a`
+JOIN `tbl_tema` `b` ON `a`.`con_id_tema`=`b`.`tem_id`', [], false)
+ 2 APPPATH\Models\portadaModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(18): App\Models\portadaModel->contenidoModel()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-30 00:00:46 --> mysqli_sql_exception: Unknown column 'a.con_id_tema' in 'on clause' in C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `a`.`con...', 0)
+#1 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`con...')
+#2 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`con...')
+#3 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con...', Array, false)
+#4 C:\xampp\htdocs\proyectoTresBdd\app\Models\portadaModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyectoTresBdd\app\Controllers\Home.php(18): App\Models\portadaModel->contenidoModel()
+#6 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#7 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\proyectoTresBdd\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-30 00:00:46 --> Unknown column 'a.con_id_tema' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con_contenido`, `b`.`tem_tema`
+FROM `tbl_contenido` `a`
+JOIN `tbl_tema` `b` ON `a`.`con_id_tema`=`b`.`tem_id`', [], false)
+ 2 APPPATH\Models\portadaModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(18): App\Models\portadaModel->contenidoModel()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-30 00:00:46 --> mysqli_sql_exception: Unknown column 'a.con_id_tema' in 'on clause' in C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `a`.`con...', 0)
+#1 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`con...')
+#2 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`con...')
+#3 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con...', Array, false)
+#4 C:\xampp\htdocs\proyectoTresBdd\app\Models\portadaModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyectoTresBdd\app\Controllers\Home.php(18): App\Models\portadaModel->contenidoModel()
+#6 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#7 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\proyectoTresBdd\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-30 00:00:46 --> Unknown column 'a.con_id_tema' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con_contenido`, `b`.`tem_tema`
+FROM `tbl_contenido` `a`
+JOIN `tbl_tema` `b` ON `a`.`con_id_tema`=`b`.`tem_id`', [], false)
+ 2 APPPATH\Models\portadaModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(18): App\Models\portadaModel->contenidoModel()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-30 00:00:46 --> mysqli_sql_exception: Unknown column 'a.con_id_tema' in 'on clause' in C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `a`.`con...', 0)
+#1 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`con...')
+#2 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`con...')
+#3 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con...', Array, false)
+#4 C:\xampp\htdocs\proyectoTresBdd\app\Models\portadaModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyectoTresBdd\app\Controllers\Home.php(18): App\Models\portadaModel->contenidoModel()
+#6 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#7 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\proyectoTresBdd\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-30 00:00:46 --> Unknown column 'a.con_id_tema' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con_contenido`, `b`.`tem_tema`
+FROM `tbl_contenido` `a`
+JOIN `tbl_tema` `b` ON `a`.`con_id_tema`=`b`.`tem_id`', [], false)
+ 2 APPPATH\Models\portadaModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(18): App\Models\portadaModel->contenidoModel()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-30 00:00:46 --> mysqli_sql_exception: Unknown column 'a.con_id_tema' in 'on clause' in C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `a`.`con...', 0)
+#1 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`con...')
+#2 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`con...')
+#3 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con...', Array, false)
+#4 C:\xampp\htdocs\proyectoTresBdd\app\Models\portadaModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyectoTresBdd\app\Controllers\Home.php(18): App\Models\portadaModel->contenidoModel()
+#6 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#7 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\proyectoTresBdd\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-30 00:00:46 --> Unknown column 'a.con_id_tema' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con_contenido`, `b`.`tem_tema`
+FROM `tbl_contenido` `a`
+JOIN `tbl_tema` `b` ON `a`.`con_id_tema`=`b`.`tem_id`', [], false)
+ 2 APPPATH\Models\portadaModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(18): App\Models\portadaModel->contenidoModel()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-30 00:00:46 --> mysqli_sql_exception: Unknown column 'a.con_id_tema' in 'on clause' in C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `a`.`con...', 0)
+#1 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`con...')
+#2 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`con...')
+#3 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con...', Array, false)
+#4 C:\xampp\htdocs\proyectoTresBdd\app\Models\portadaModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyectoTresBdd\app\Controllers\Home.php(18): App\Models\portadaModel->contenidoModel()
+#6 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#7 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\proyectoTresBdd\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-30 00:00:46 --> Unknown column 'a.con_id_tema' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con_contenido`, `b`.`tem_tema`
+FROM `tbl_contenido` `a`
+JOIN `tbl_tema` `b` ON `a`.`con_id_tema`=`b`.`tem_id`', [], false)
+ 2 APPPATH\Models\portadaModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(18): App\Models\portadaModel->contenidoModel()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-30 00:01:50 --> mysqli_sql_exception: Unknown column 'a.con_id_tema' in 'on clause' in C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `a`.`con...', 0)
+#1 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`con...')
+#2 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`con...')
+#3 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con...', Array, false)
+#4 C:\xampp\htdocs\proyectoTresBdd\app\Models\portadaModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyectoTresBdd\app\Controllers\Home.php(18): App\Models\portadaModel->contenidoModel()
+#6 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#7 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\proyectoTresBdd\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-30 00:01:50 --> Unknown column 'a.con_id_tema' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con_contenido`, `b`.`tem_tema`
+FROM `tbl_contenido` `a`
+JOIN `tbl_tema` `b` ON `a`.`con_id_tema`=`b`.`tem_id`', [], false)
+ 2 APPPATH\Models\portadaModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(18): App\Models\portadaModel->contenidoModel()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-30 00:01:51 --> mysqli_sql_exception: Unknown column 'a.con_id_tema' in 'on clause' in C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `a`.`con...', 0)
+#1 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`con...')
+#2 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`con...')
+#3 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con...', Array, false)
+#4 C:\xampp\htdocs\proyectoTresBdd\app\Models\portadaModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyectoTresBdd\app\Controllers\Home.php(18): App\Models\portadaModel->contenidoModel()
+#6 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#7 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\proyectoTresBdd\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-30 00:01:51 --> Unknown column 'a.con_id_tema' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con_contenido`, `b`.`tem_tema`
+FROM `tbl_contenido` `a`
+JOIN `tbl_tema` `b` ON `a`.`con_id_tema`=`b`.`tem_id`', [], false)
+ 2 APPPATH\Models\portadaModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(18): App\Models\portadaModel->contenidoModel()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-30 00:01:51 --> mysqli_sql_exception: Unknown column 'a.con_id_tema' in 'on clause' in C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `a`.`con...', 0)
+#1 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`con...')
+#2 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`con...')
+#3 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con...', Array, false)
+#4 C:\xampp\htdocs\proyectoTresBdd\app\Models\portadaModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyectoTresBdd\app\Controllers\Home.php(18): App\Models\portadaModel->contenidoModel()
+#6 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#7 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\proyectoTresBdd\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-30 00:01:51 --> Unknown column 'a.con_id_tema' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con_contenido`, `b`.`tem_tema`
+FROM `tbl_contenido` `a`
+JOIN `tbl_tema` `b` ON `a`.`con_id_tema`=`b`.`tem_id`', [], false)
+ 2 APPPATH\Models\portadaModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(18): App\Models\portadaModel->contenidoModel()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-30 00:01:51 --> mysqli_sql_exception: Unknown column 'a.con_id_tema' in 'on clause' in C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `a`.`con...', 0)
+#1 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`con...')
+#2 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`con...')
+#3 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con...', Array, false)
+#4 C:\xampp\htdocs\proyectoTresBdd\app\Models\portadaModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyectoTresBdd\app\Controllers\Home.php(18): App\Models\portadaModel->contenidoModel()
+#6 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#7 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\proyectoTresBdd\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-30 00:01:51 --> Unknown column 'a.con_id_tema' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con_contenido`, `b`.`tem_tema`
+FROM `tbl_contenido` `a`
+JOIN `tbl_tema` `b` ON `a`.`con_id_tema`=`b`.`tem_id`', [], false)
+ 2 APPPATH\Models\portadaModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(18): App\Models\portadaModel->contenidoModel()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-30 00:01:51 --> mysqli_sql_exception: Unknown column 'a.con_id_tema' in 'on clause' in C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `a`.`con...', 0)
+#1 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`con...')
+#2 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`con...')
+#3 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con...', Array, false)
+#4 C:\xampp\htdocs\proyectoTresBdd\app\Models\portadaModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyectoTresBdd\app\Controllers\Home.php(18): App\Models\portadaModel->contenidoModel()
+#6 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#7 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\proyectoTresBdd\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-30 00:01:51 --> Unknown column 'a.con_id_tema' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con_contenido`, `b`.`tem_tema`
+FROM `tbl_contenido` `a`
+JOIN `tbl_tema` `b` ON `a`.`con_id_tema`=`b`.`tem_id`', [], false)
+ 2 APPPATH\Models\portadaModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(18): App\Models\portadaModel->contenidoModel()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-30 00:02:45 --> mysqli_sql_exception: Unknown column 'a.id_tema' in 'on clause' in C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `a`.`con...', 0)
+#1 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`con...')
+#2 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`con...')
+#3 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con...', Array, false)
+#4 C:\xampp\htdocs\proyectoTresBdd\app\Models\portadaModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyectoTresBdd\app\Controllers\Home.php(18): App\Models\portadaModel->contenidoModel()
+#6 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#7 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\proyectoTresBdd\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-30 00:02:45 --> Unknown column 'a.id_tema' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con_contenido`, `b`.`tem_tema`
+FROM `tbl_contenido` `a`
+JOIN `tbl_tema` `b` ON `a`.`id_tema`=`b`.`id_tema`', [], false)
+ 2 APPPATH\Models\portadaModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(18): App\Models\portadaModel->contenidoModel()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-30 00:02:45 --> mysqli_sql_exception: Unknown column 'a.id_tema' in 'on clause' in C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `a`.`con...', 0)
+#1 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`con...')
+#2 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`con...')
+#3 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con...', Array, false)
+#4 C:\xampp\htdocs\proyectoTresBdd\app\Models\portadaModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyectoTresBdd\app\Controllers\Home.php(18): App\Models\portadaModel->contenidoModel()
+#6 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#7 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\proyectoTresBdd\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-30 00:02:45 --> Unknown column 'a.id_tema' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con_contenido`, `b`.`tem_tema`
+FROM `tbl_contenido` `a`
+JOIN `tbl_tema` `b` ON `a`.`id_tema`=`b`.`id_tema`', [], false)
+ 2 APPPATH\Models\portadaModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(18): App\Models\portadaModel->contenidoModel()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-30 00:02:45 --> mysqli_sql_exception: Unknown column 'a.id_tema' in 'on clause' in C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `a`.`con...', 0)
+#1 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`con...')
+#2 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`con...')
+#3 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con...', Array, false)
+#4 C:\xampp\htdocs\proyectoTresBdd\app\Models\portadaModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyectoTresBdd\app\Controllers\Home.php(18): App\Models\portadaModel->contenidoModel()
+#6 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#7 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\proyectoTresBdd\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-30 00:02:45 --> Unknown column 'a.id_tema' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con_contenido`, `b`.`tem_tema`
+FROM `tbl_contenido` `a`
+JOIN `tbl_tema` `b` ON `a`.`id_tema`=`b`.`id_tema`', [], false)
+ 2 APPPATH\Models\portadaModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(18): App\Models\portadaModel->contenidoModel()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-30 00:02:45 --> mysqli_sql_exception: Unknown column 'a.id_tema' in 'on clause' in C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `a`.`con...', 0)
+#1 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`con...')
+#2 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`con...')
+#3 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con...', Array, false)
+#4 C:\xampp\htdocs\proyectoTresBdd\app\Models\portadaModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyectoTresBdd\app\Controllers\Home.php(18): App\Models\portadaModel->contenidoModel()
+#6 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#7 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\proyectoTresBdd\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-30 00:02:45 --> Unknown column 'a.id_tema' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con_contenido`, `b`.`tem_tema`
+FROM `tbl_contenido` `a`
+JOIN `tbl_tema` `b` ON `a`.`id_tema`=`b`.`id_tema`', [], false)
+ 2 APPPATH\Models\portadaModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(18): App\Models\portadaModel->contenidoModel()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-30 00:02:45 --> mysqli_sql_exception: Unknown column 'a.id_tema' in 'on clause' in C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `a`.`con...', 0)
+#1 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`con...')
+#2 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`con...')
+#3 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con...', Array, false)
+#4 C:\xampp\htdocs\proyectoTresBdd\app\Models\portadaModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyectoTresBdd\app\Controllers\Home.php(18): App\Models\portadaModel->contenidoModel()
+#6 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#7 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\proyectoTresBdd\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-30 00:02:45 --> Unknown column 'a.id_tema' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con_contenido`, `b`.`tem_tema`
+FROM `tbl_contenido` `a`
+JOIN `tbl_tema` `b` ON `a`.`id_tema`=`b`.`id_tema`', [], false)
+ 2 APPPATH\Models\portadaModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(18): App\Models\portadaModel->contenidoModel()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-30 00:03:45 --> mysqli_sql_exception: Unknown column 'a.id_tema' in 'on clause' in C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `a`.`con...', 0)
+#1 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`con...')
+#2 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`con...')
+#3 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con...', Array, false)
+#4 C:\xampp\htdocs\proyectoTresBdd\app\Models\portadaModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyectoTresBdd\app\Controllers\Home.php(20): App\Models\portadaModel->contenidoModel()
+#6 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#7 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\proyectoTresBdd\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-30 00:03:45 --> Unknown column 'a.id_tema' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con_contenido`, `b`.`tem_tema`
+FROM `tbl_contenido` `a`
+JOIN `tbl_tema` `b` ON `a`.`id_tema`=`b`.`id_tema`', [], false)
+ 2 APPPATH\Models\portadaModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(20): App\Models\portadaModel->contenidoModel()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-30 00:03:45 --> mysqli_sql_exception: Unknown column 'a.id_tema' in 'on clause' in C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `a`.`con...', 0)
+#1 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`con...')
+#2 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`con...')
+#3 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con...', Array, false)
+#4 C:\xampp\htdocs\proyectoTresBdd\app\Models\portadaModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyectoTresBdd\app\Controllers\Home.php(20): App\Models\portadaModel->contenidoModel()
+#6 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#7 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\proyectoTresBdd\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-30 00:03:45 --> Unknown column 'a.id_tema' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con_contenido`, `b`.`tem_tema`
+FROM `tbl_contenido` `a`
+JOIN `tbl_tema` `b` ON `a`.`id_tema`=`b`.`id_tema`', [], false)
+ 2 APPPATH\Models\portadaModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(20): App\Models\portadaModel->contenidoModel()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-30 00:03:45 --> mysqli_sql_exception: Unknown column 'a.id_tema' in 'on clause' in C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `a`.`con...', 0)
+#1 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`con...')
+#2 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`con...')
+#3 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con...', Array, false)
+#4 C:\xampp\htdocs\proyectoTresBdd\app\Models\portadaModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyectoTresBdd\app\Controllers\Home.php(20): App\Models\portadaModel->contenidoModel()
+#6 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#7 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\proyectoTresBdd\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-30 00:03:45 --> Unknown column 'a.id_tema' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con_contenido`, `b`.`tem_tema`
+FROM `tbl_contenido` `a`
+JOIN `tbl_tema` `b` ON `a`.`id_tema`=`b`.`id_tema`', [], false)
+ 2 APPPATH\Models\portadaModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(20): App\Models\portadaModel->contenidoModel()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-30 00:03:46 --> mysqli_sql_exception: Unknown column 'a.id_tema' in 'on clause' in C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `a`.`con...', 0)
+#1 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`con...')
+#2 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`con...')
+#3 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con...', Array, false)
+#4 C:\xampp\htdocs\proyectoTresBdd\app\Models\portadaModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyectoTresBdd\app\Controllers\Home.php(20): App\Models\portadaModel->contenidoModel()
+#6 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#7 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\proyectoTresBdd\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-30 00:03:46 --> Unknown column 'a.id_tema' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con_contenido`, `b`.`tem_tema`
+FROM `tbl_contenido` `a`
+JOIN `tbl_tema` `b` ON `a`.`id_tema`=`b`.`id_tema`', [], false)
+ 2 APPPATH\Models\portadaModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(20): App\Models\portadaModel->contenidoModel()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-30 00:04:42 --> mysqli_sql_exception: Not unique table/alias: 'b' in C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `a`.`con...', 0)
+#1 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`con...')
+#2 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`con...')
+#3 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con...', Array, false)
+#4 C:\xampp\htdocs\proyectoTresBdd\app\Models\portadaModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyectoTresBdd\app\Controllers\Home.php(20): App\Models\portadaModel->contenidoModel()
+#6 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#7 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\proyectoTresBdd\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-30 00:04:42 --> Not unique table/alias: 'b'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con_contenido`, `b`.`tem_tema`
+FROM `tbl_contenido` `b`
+JOIN `tbl_tema` `b` ON `a`.`id_tema`=`b`.`id_tema`', [], false)
+ 2 APPPATH\Models\portadaModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(20): App\Models\portadaModel->contenidoModel()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-30 00:04:42 --> mysqli_sql_exception: Not unique table/alias: 'b' in C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `a`.`con...', 0)
+#1 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`con...')
+#2 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`con...')
+#3 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con...', Array, false)
+#4 C:\xampp\htdocs\proyectoTresBdd\app\Models\portadaModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyectoTresBdd\app\Controllers\Home.php(20): App\Models\portadaModel->contenidoModel()
+#6 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#7 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\proyectoTresBdd\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-30 00:04:42 --> Not unique table/alias: 'b'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con_contenido`, `b`.`tem_tema`
+FROM `tbl_contenido` `b`
+JOIN `tbl_tema` `b` ON `a`.`id_tema`=`b`.`id_tema`', [], false)
+ 2 APPPATH\Models\portadaModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(20): App\Models\portadaModel->contenidoModel()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-30 00:04:43 --> mysqli_sql_exception: Not unique table/alias: 'b' in C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `a`.`con...', 0)
+#1 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`con...')
+#2 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`con...')
+#3 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con...', Array, false)
+#4 C:\xampp\htdocs\proyectoTresBdd\app\Models\portadaModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyectoTresBdd\app\Controllers\Home.php(20): App\Models\portadaModel->contenidoModel()
+#6 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#7 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\proyectoTresBdd\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-30 00:04:43 --> Not unique table/alias: 'b'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con_contenido`, `b`.`tem_tema`
+FROM `tbl_contenido` `b`
+JOIN `tbl_tema` `b` ON `a`.`id_tema`=`b`.`id_tema`', [], false)
+ 2 APPPATH\Models\portadaModel.php(31): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(20): App\Models\portadaModel->contenidoModel()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-30 00:05:48 --> mysqli_sql_exception: Unknown column 'a.con_contenido' in 'field list' in C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `a`.`con...', 0)
+#1 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`con...')
+#2 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`con...')
+#3 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con...', Array, false)
+#4 C:\xampp\htdocs\proyectoTresBdd\app\Models\portadaModel.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyectoTresBdd\app\Controllers\Home.php(20): App\Models\portadaModel->contenidoModel()
+#6 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#7 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\proyectoTresBdd\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-30 00:05:48 --> Unknown column 'a.con_contenido' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con_contenido`, `b`.`tem_tema`
+FROM `tbl_contenido`
+JOIN `tbl_tema` `b` ON `a`.`con_id_tema`=`b`.`tem_id`', [], false)
+ 2 APPPATH\Models\portadaModel.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(20): App\Models\portadaModel->contenidoModel()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-30 00:05:48 --> mysqli_sql_exception: Unknown column 'a.con_contenido' in 'field list' in C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `a`.`con...', 0)
+#1 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`con...')
+#2 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`con...')
+#3 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con...', Array, false)
+#4 C:\xampp\htdocs\proyectoTresBdd\app\Models\portadaModel.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyectoTresBdd\app\Controllers\Home.php(20): App\Models\portadaModel->contenidoModel()
+#6 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#7 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\proyectoTresBdd\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-30 00:05:48 --> Unknown column 'a.con_contenido' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con_contenido`, `b`.`tem_tema`
+FROM `tbl_contenido`
+JOIN `tbl_tema` `b` ON `a`.`con_id_tema`=`b`.`tem_id`', [], false)
+ 2 APPPATH\Models\portadaModel.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(20): App\Models\portadaModel->contenidoModel()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-30 00:05:49 --> mysqli_sql_exception: Unknown column 'a.con_contenido' in 'field list' in C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `a`.`con...', 0)
+#1 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`con...')
+#2 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`con...')
+#3 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con...', Array, false)
+#4 C:\xampp\htdocs\proyectoTresBdd\app\Models\portadaModel.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyectoTresBdd\app\Controllers\Home.php(20): App\Models\portadaModel->contenidoModel()
+#6 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#7 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\proyectoTresBdd\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-30 00:05:49 --> Unknown column 'a.con_contenido' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con_contenido`, `b`.`tem_tema`
+FROM `tbl_contenido`
+JOIN `tbl_tema` `b` ON `a`.`con_id_tema`=`b`.`tem_id`', [], false)
+ 2 APPPATH\Models\portadaModel.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(20): App\Models\portadaModel->contenidoModel()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-30 00:06:20 --> mysqli_sql_exception: Unknown column 'a.con_contenido' in 'field list' in C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `a`.`con...', 0)
+#1 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`con...')
+#2 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`con...')
+#3 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con...', Array, false)
+#4 C:\xampp\htdocs\proyectoTresBdd\app\Models\portadaModel.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyectoTresBdd\app\Controllers\Home.php(20): App\Models\portadaModel->contenidoModel()
+#6 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#7 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\proyectoTresBdd\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-30 00:06:20 --> Unknown column 'a.con_contenido' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con_contenido`, `b`.`tem_tema`
+FROM `tbl_contenido`
+JOIN `tbl_tema` `b` ON `a`.`tem_id`=`b`.`tem_id`', [], false)
+ 2 APPPATH\Models\portadaModel.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(20): App\Models\portadaModel->contenidoModel()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-30 00:06:21 --> mysqli_sql_exception: Unknown column 'a.con_contenido' in 'field list' in C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `a`.`con...', 0)
+#1 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`con...')
+#2 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`con...')
+#3 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con...', Array, false)
+#4 C:\xampp\htdocs\proyectoTresBdd\app\Models\portadaModel.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyectoTresBdd\app\Controllers\Home.php(20): App\Models\portadaModel->contenidoModel()
+#6 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#7 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\proyectoTresBdd\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-30 00:06:21 --> Unknown column 'a.con_contenido' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con_contenido`, `b`.`tem_tema`
+FROM `tbl_contenido`
+JOIN `tbl_tema` `b` ON `a`.`tem_id`=`b`.`tem_id`', [], false)
+ 2 APPPATH\Models\portadaModel.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(20): App\Models\portadaModel->contenidoModel()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-30 00:06:21 --> mysqli_sql_exception: Unknown column 'a.con_contenido' in 'field list' in C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `a`.`con...', 0)
+#1 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`con...')
+#2 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`con...')
+#3 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con...', Array, false)
+#4 C:\xampp\htdocs\proyectoTresBdd\app\Models\portadaModel.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyectoTresBdd\app\Controllers\Home.php(20): App\Models\portadaModel->contenidoModel()
+#6 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#7 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\proyectoTresBdd\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-30 00:06:21 --> Unknown column 'a.con_contenido' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con_contenido`, `b`.`tem_tema`
+FROM `tbl_contenido`
+JOIN `tbl_tema` `b` ON `a`.`tem_id`=`b`.`tem_id`', [], false)
+ 2 APPPATH\Models\portadaModel.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(20): App\Models\portadaModel->contenidoModel()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-30 00:06:21 --> mysqli_sql_exception: Unknown column 'a.con_contenido' in 'field list' in C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `a`.`con...', 0)
+#1 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`con...')
+#2 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`con...')
+#3 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con...', Array, false)
+#4 C:\xampp\htdocs\proyectoTresBdd\app\Models\portadaModel.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyectoTresBdd\app\Controllers\Home.php(20): App\Models\portadaModel->contenidoModel()
+#6 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#7 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\proyectoTresBdd\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-30 00:06:21 --> Unknown column 'a.con_contenido' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con_contenido`, `b`.`tem_tema`
+FROM `tbl_contenido`
+JOIN `tbl_tema` `b` ON `a`.`tem_id`=`b`.`tem_id`', [], false)
+ 2 APPPATH\Models\portadaModel.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(20): App\Models\portadaModel->contenidoModel()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-30 00:07:44 --> mysqli_sql_exception: Not unique table/alias: 'b' in C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `a`.`con...', 0)
+#1 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`con...')
+#2 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`con...')
+#3 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con...', Array, false)
+#4 C:\xampp\htdocs\proyectoTresBdd\app\Models\portadaModel.php(30): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyectoTresBdd\app\Controllers\Home.php(20): App\Models\portadaModel->contenidoModel()
+#6 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#7 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\proyectoTresBdd\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-30 00:07:44 --> Not unique table/alias: 'b'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con_contenido`, `b`.`tem_tema`
+FROM `tbl_contenido` `b`
+JOIN `tbl_tema` `b` ON `a`.`tem_id`=`b`.`tem_id`', [], false)
+ 2 APPPATH\Models\portadaModel.php(30): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(20): App\Models\portadaModel->contenidoModel()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-30 00:07:45 --> mysqli_sql_exception: Not unique table/alias: 'b' in C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `a`.`con...', 0)
+#1 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`con...')
+#2 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`con...')
+#3 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con...', Array, false)
+#4 C:\xampp\htdocs\proyectoTresBdd\app\Models\portadaModel.php(30): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyectoTresBdd\app\Controllers\Home.php(20): App\Models\portadaModel->contenidoModel()
+#6 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#7 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\proyectoTresBdd\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-30 00:07:45 --> Not unique table/alias: 'b'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con_contenido`, `b`.`tem_tema`
+FROM `tbl_contenido` `b`
+JOIN `tbl_tema` `b` ON `a`.`tem_id`=`b`.`tem_id`', [], false)
+ 2 APPPATH\Models\portadaModel.php(30): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(20): App\Models\portadaModel->contenidoModel()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-30 00:07:45 --> mysqli_sql_exception: Not unique table/alias: 'b' in C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `a`.`con...', 0)
+#1 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`con...')
+#2 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`con...')
+#3 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con...', Array, false)
+#4 C:\xampp\htdocs\proyectoTresBdd\app\Models\portadaModel.php(30): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyectoTresBdd\app\Controllers\Home.php(20): App\Models\portadaModel->contenidoModel()
+#6 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#7 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\proyectoTresBdd\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-30 00:07:45 --> Not unique table/alias: 'b'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con_contenido`, `b`.`tem_tema`
+FROM `tbl_contenido` `b`
+JOIN `tbl_tema` `b` ON `a`.`tem_id`=`b`.`tem_id`', [], false)
+ 2 APPPATH\Models\portadaModel.php(30): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(20): App\Models\portadaModel->contenidoModel()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-30 00:07:45 --> mysqli_sql_exception: Not unique table/alias: 'b' in C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `a`.`con...', 0)
+#1 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`con...')
+#2 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`con...')
+#3 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con...', Array, false)
+#4 C:\xampp\htdocs\proyectoTresBdd\app\Models\portadaModel.php(30): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyectoTresBdd\app\Controllers\Home.php(20): App\Models\portadaModel->contenidoModel()
+#6 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#7 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\proyectoTresBdd\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-30 00:07:45 --> Not unique table/alias: 'b'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con_contenido`, `b`.`tem_tema`
+FROM `tbl_contenido` `b`
+JOIN `tbl_tema` `b` ON `a`.`tem_id`=`b`.`tem_id`', [], false)
+ 2 APPPATH\Models\portadaModel.php(30): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(20): App\Models\portadaModel->contenidoModel()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-30 00:07:48 --> mysqli_sql_exception: Unknown column 'a.con_contenido' in 'field list' in C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `a`.`con...', 0)
+#1 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`con...')
+#2 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`con...')
+#3 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con...', Array, false)
+#4 C:\xampp\htdocs\proyectoTresBdd\app\Models\portadaModel.php(30): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyectoTresBdd\app\Controllers\Home.php(20): App\Models\portadaModel->contenidoModel()
+#6 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#7 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\proyectoTresBdd\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-30 00:07:48 --> Unknown column 'a.con_contenido' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`con_contenido`, `b`.`tem_tema`
+FROM `tbl_contenido`
+JOIN `tbl_tema` `b` ON `a`.`tem_id`=`b`.`tem_id`', [], false)
+ 2 APPPATH\Models\portadaModel.php(30): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(20): App\Models\portadaModel->contenidoModel()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 00:13:21 --> Undefined variable $respC
+in APPPATH\Views\welcome_message.php on line 159.
+ 1 APPPATH\Views\welcome_message.php(159): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $respC', 'C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\welcome_message.php', 159)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\welcome_message.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('welcome_message', [], true)
+ 5 APPPATH\Controllers\Home.php(29): view('welcome_message', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 00:13:21 --> Undefined variable $respC
+in APPPATH\Views\welcome_message.php on line 159.
+ 1 APPPATH\Views\welcome_message.php(159): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $respC', 'C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\welcome_message.php', 159)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\welcome_message.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('welcome_message', [], true)
+ 5 APPPATH\Controllers\Home.php(29): view('welcome_message', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 00:13:33 --> Undefined variable $respC
+in APPPATH\Views\welcome_message.php on line 160.
+ 1 APPPATH\Views\welcome_message.php(160): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $respC', 'C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\welcome_message.php', 160)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\welcome_message.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('welcome_message', [], true)
+ 5 APPPATH\Controllers\Home.php(29): view('welcome_message', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 00:14:12 --> Undefined array key "titulo"
+in APPPATH\Views\welcome_message.php on line 158.
+ 1 APPPATH\Views\welcome_message.php(158): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "titulo"', 'C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\welcome_message.php', 158)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\welcome_message.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('welcome_message', [], true)
+ 5 APPPATH\Controllers\Home.php(29): view('welcome_message', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 00:14:13 --> Undefined array key "titulo"
+in APPPATH\Views\welcome_message.php on line 158.
+ 1 APPPATH\Views\welcome_message.php(158): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "titulo"', 'C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\welcome_message.php', 158)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\welcome_message.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('welcome_message', [], true)
+ 5 APPPATH\Controllers\Home.php(29): view('welcome_message', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 00:14:36 --> Undefined array key "contenido"
+in APPPATH\Views\welcome_message.php on line 158.
+ 1 APPPATH\Views\welcome_message.php(158): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "contenido"', 'C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\welcome_message.php', 158)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\welcome_message.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('welcome_message', [], true)
+ 5 APPPATH\Controllers\Home.php(29): view('welcome_message', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 00:14:36 --> Undefined array key "contenido"
+in APPPATH\Views\welcome_message.php on line 158.
+ 1 APPPATH\Views\welcome_message.php(158): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "contenido"', 'C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\welcome_message.php', 158)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\welcome_message.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('welcome_message', [], true)
+ 5 APPPATH\Controllers\Home.php(29): view('welcome_message', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 00:14:36 --> Undefined array key "contenido"
+in APPPATH\Views\welcome_message.php on line 158.
+ 1 APPPATH\Views\welcome_message.php(158): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "contenido"', 'C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\welcome_message.php', 158)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\welcome_message.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('welcome_message', [], true)
+ 5 APPPATH\Controllers\Home.php(29): view('welcome_message', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 00:14:37 --> Undefined array key "contenido"
+in APPPATH\Views\welcome_message.php on line 158.
+ 1 APPPATH\Views\welcome_message.php(158): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "contenido"', 'C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\welcome_message.php', 158)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\welcome_message.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('welcome_message', [], true)
+ 5 APPPATH\Controllers\Home.php(29): view('welcome_message', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 00:15:01 --> Attempt to read property "id" on array
+in APPPATH\Views\welcome_message.php on line 158.
+ 1 APPPATH\Views\welcome_message.php(158): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\welcome_message.php', 158)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\welcome_message.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('welcome_message', [], true)
+ 5 APPPATH\Controllers\Home.php(29): view('welcome_message', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 00:15:02 --> Attempt to read property "id" on array
+in APPPATH\Views\welcome_message.php on line 158.
+ 1 APPPATH\Views\welcome_message.php(158): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\welcome_message.php', 158)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\welcome_message.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('welcome_message', [], true)
+ 5 APPPATH\Controllers\Home.php(29): view('welcome_message', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 00:15:02 --> Attempt to read property "id" on array
+in APPPATH\Views\welcome_message.php on line 158.
+ 1 APPPATH\Views\welcome_message.php(158): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\welcome_message.php', 158)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\welcome_message.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('welcome_message', [], true)
+ 5 APPPATH\Controllers\Home.php(29): view('welcome_message', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 00:15:02 --> Attempt to read property "id" on array
+in APPPATH\Views\welcome_message.php on line 158.
+ 1 APPPATH\Views\welcome_message.php(158): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\welcome_message.php', 158)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\welcome_message.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('welcome_message', [], true)
+ 5 APPPATH\Controllers\Home.php(29): view('welcome_message', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 00:15:10 --> Attempt to read property "titulo" on array
+in APPPATH\Views\welcome_message.php on line 158.
+ 1 APPPATH\Views\welcome_message.php(158): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "titulo" on array', 'C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\welcome_message.php', 158)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\welcome_message.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('welcome_message', [], true)
+ 5 APPPATH\Controllers\Home.php(29): view('welcome_message', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 00:15:10 --> Attempt to read property "titulo" on array
+in APPPATH\Views\welcome_message.php on line 158.
+ 1 APPPATH\Views\welcome_message.php(158): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "titulo" on array', 'C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\welcome_message.php', 158)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\welcome_message.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('welcome_message', [], true)
+ 5 APPPATH\Controllers\Home.php(29): view('welcome_message', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 00:15:10 --> Attempt to read property "titulo" on array
+in APPPATH\Views\welcome_message.php on line 158.
+ 1 APPPATH\Views\welcome_message.php(158): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "titulo" on array', 'C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\welcome_message.php', 158)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\welcome_message.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('welcome_message', [], true)
+ 5 APPPATH\Controllers\Home.php(29): view('welcome_message', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 00:15:10 --> Attempt to read property "titulo" on array
+in APPPATH\Views\welcome_message.php on line 158.
+ 1 APPPATH\Views\welcome_message.php(158): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "titulo" on array', 'C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\welcome_message.php', 158)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\welcome_message.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('welcome_message', [], true)
+ 5 APPPATH\Controllers\Home.php(29): view('welcome_message', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 00:15:57 --> Undefined array key "contenido"
+in APPPATH\Views\welcome_message.php on line 158.
+ 1 APPPATH\Views\welcome_message.php(158): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "contenido"', 'C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\welcome_message.php', 158)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\welcome_message.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('welcome_message', [], true)
+ 5 APPPATH\Controllers\Home.php(29): view('welcome_message', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
