@@ -31,4 +31,45 @@ class portadaModel extends Model{
         $resp= $query->getResultArray();
         return $resp;
     }
+
+    /* libreria */
+    public function librosModel(){
+        $db= \Config\Database::connect();
+        $builder =$db->table('tbl_libros a');
+    
+        $builder->select(
+            'a.lib_id,
+            a.lib_titulo,
+            a.lib_codigo,
+            a.lib_precio,
+            a.lib_resumen,
+            b.tem_tema'
+        );
+
+        $builder->join('tbl_tema b','a.tem_id=b.tem_id');
+        
+        $query=$builder->get();
+        $resp= $query->getResultArray();
+        return $resp;
+    }
+
+    public function buscarModel($codigo){
+        $db= \Config\Database::connect();
+        $builder =$db->table('tbl_libros a');
+    
+        $builder->select(
+            'a.lib_id,
+            a.lib_titulo,
+            a.lib_codigo,
+            a.lib_precio,
+            a.lib_resumen,
+            b.tem_tema'
+        );
+
+        $builder->join('tbl_tema b','a.tem_id=b.tem_id');
+        
+        $query=$builder->get();
+        $resp= $query->getResultArray();
+        return $resp;
+    }
 }

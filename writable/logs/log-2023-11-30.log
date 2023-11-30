@@ -1156,3 +1156,250 @@ in APPPATH\Views\welcome_message.php on line 158.
  7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
  8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 21:07:27 --> Undefined variable $contenido
+in APPPATH\Views\deber.php on line 15.
+ 1 APPPATH\Views\deber.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $contenido', 'C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\deber.php', 15)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\deber.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('deber', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('deber')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->libros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-30 21:10:06 --> mysqli_sql_exception: Table 'semana7.tbl_libro' doesn't exist in C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `a`.`lib...', 0)
+#1 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`lib...')
+#2 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`lib...')
+#3 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`lib...', Array, false)
+#4 C:\xampp\htdocs\proyectoTresBdd\app\Models\portadaModel.php(50): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyectoTresBdd\app\Controllers\Home.php(38): App\Models\portadaModel->librosModel()
+#6 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(942): App\Controllers\Home->libros()
+#7 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\proyectoTresBdd\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-30 21:10:06 --> Table 'semana7.tbl_libro' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`lib_id`, `a`.`lib_titulo`, `a`.`lib_codigo`, `a`.`lib_precio`, `b`.`tem_tema`
+FROM `tbl_libro` `a`
+JOIN `tbl_tema` `b` ON `a`.`tem_id`=`b`.`tem_id`', [], false)
+ 2 APPPATH\Models\portadaModel.php(50): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(38): App\Models\portadaModel->librosModel()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->libros()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-30 21:10:07 --> mysqli_sql_exception: Table 'semana7.tbl_libro' doesn't exist in C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `a`.`lib...', 0)
+#1 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`lib...')
+#2 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`lib...')
+#3 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`lib...', Array, false)
+#4 C:\xampp\htdocs\proyectoTresBdd\app\Models\portadaModel.php(50): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyectoTresBdd\app\Controllers\Home.php(38): App\Models\portadaModel->librosModel()
+#6 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(942): App\Controllers\Home->libros()
+#7 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\proyectoTresBdd\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-30 21:10:07 --> Table 'semana7.tbl_libro' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`lib_id`, `a`.`lib_titulo`, `a`.`lib_codigo`, `a`.`lib_precio`, `b`.`tem_tema`
+FROM `tbl_libro` `a`
+JOIN `tbl_tema` `b` ON `a`.`tem_id`=`b`.`tem_id`', [], false)
+ 2 APPPATH\Models\portadaModel.php(50): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(38): App\Models\portadaModel->librosModel()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->libros()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 21:10:19 --> Undefined variable $contenido
+in APPPATH\Views\deber.php on line 15.
+ 1 APPPATH\Views\deber.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $contenido', 'C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\deber.php', 15)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\deber.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('deber', [], true)
+ 5 APPPATH\Controllers\Home.php(42): view('deber', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->libros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 21:10:20 --> Undefined variable $contenido
+in APPPATH\Views\deber.php on line 15.
+ 1 APPPATH\Views\deber.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $contenido', 'C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\deber.php', 15)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\deber.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('deber', [], true)
+ 5 APPPATH\Controllers\Home.php(42): view('deber', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->libros()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 21:16:50 --> Undefined variable $libro
+in APPPATH\Views\busqueda.php on line 10.
+ 1 APPPATH\Views\busqueda.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $libro', 'C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\busqueda.php', 10)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\busqueda.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('busqueda', [], true)
+ 5 APPPATH\Controllers\Home.php(61): view('busqueda', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->buscar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 21:17:22 --> Undefined array key "lib_titulo"
+in APPPATH\Views\busqueda.php on line 10.
+ 1 APPPATH\Views\busqueda.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "lib_titulo"', 'C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\busqueda.php', 10)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\busqueda.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('busqueda', [], true)
+ 5 APPPATH\Controllers\Home.php(61): view('busqueda', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->buscar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 21:18:56 --> Undefined array key "lib_titulo inteligencia artificial"
+in APPPATH\Controllers\Home.php on line 55.
+ 1 APPPATH\Controllers\Home.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "lib_titulo inteligencia artificial"', 'C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Controllers\\Home.php', 55)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->buscar()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 21:19:42 --> Undefined variable $libros
+in APPPATH\Views\busqueda.php on line 10.
+ 1 APPPATH\Views\busqueda.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $libros', 'C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\busqueda.php', 10)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\busqueda.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('busqueda', [], true)
+ 5 APPPATH\Controllers\Home.php(61): view('busqueda', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->buscar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 21:19:43 --> Undefined variable $libros
+in APPPATH\Views\busqueda.php on line 10.
+ 1 APPPATH\Views\busqueda.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $libros', 'C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\busqueda.php', 10)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\busqueda.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('busqueda', [], true)
+ 5 APPPATH\Controllers\Home.php(61): view('busqueda', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->buscar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 21:19:59 --> Undefined variable $resp
+in APPPATH\Views\busqueda.php on line 10.
+ 1 APPPATH\Views\busqueda.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resp', 'C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\busqueda.php', 10)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\busqueda.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('busqueda', [], true)
+ 5 APPPATH\Controllers\Home.php(61): view('busqueda', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->buscar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 21:20:01 --> Undefined variable $resp
+in APPPATH\Views\busqueda.php on line 10.
+ 1 APPPATH\Views\busqueda.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resp', 'C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\busqueda.php', 10)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\busqueda.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('busqueda', [], true)
+ 5 APPPATH\Controllers\Home.php(61): view('busqueda', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->buscar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 21:20:10 --> Undefined variable $resp
+in APPPATH\Views\busqueda.php on line 10.
+ 1 APPPATH\Views\busqueda.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resp', 'C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\busqueda.php', 10)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\busqueda.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('busqueda', [], true)
+ 5 APPPATH\Controllers\Home.php(61): view('busqueda', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->buscar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 21:20:11 --> Undefined variable $resp
+in APPPATH\Views\busqueda.php on line 10.
+ 1 APPPATH\Views\busqueda.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resp', 'C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\busqueda.php', 10)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\busqueda.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('busqueda', [], true)
+ 5 APPPATH\Controllers\Home.php(61): view('busqueda', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->buscar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 21:20:47 --> Undefined variable $resp
+in APPPATH\Views\busqueda.php on line 10.
+ 1 APPPATH\Views\busqueda.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resp', 'C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\busqueda.php', 10)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\busqueda.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('busqueda', [], true)
+ 5 APPPATH\Controllers\Home.php(61): view('busqueda', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->buscar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 21:20:58 --> Undefined variable $resp2
+in APPPATH\Views\busqueda.php on line 10.
+ 1 APPPATH\Views\busqueda.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resp2', 'C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\busqueda.php', 10)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Views\\busqueda.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('busqueda', [], true)
+ 5 APPPATH\Controllers\Home.php(61): view('busqueda', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->buscar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 21:22:47 --> Undefined array key "lib_resumen"
+in APPPATH\Controllers\Home.php on line 65.
+ 1 APPPATH\Controllers\Home.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "lib_resumen"', 'C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Controllers\\Home.php', 65)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->buscar()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 21:23:46 --> Undefined array key "lib_resumen"
+in APPPATH\Controllers\Home.php on line 65.
+ 1 APPPATH\Controllers\Home.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "lib_resumen"', 'C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Controllers\\Home.php', 65)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->buscar()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 21:24:01 --> Undefined array key "lib_resumen"
+in APPPATH\Controllers\Home.php on line 65.
+ 1 APPPATH\Controllers\Home.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "lib_resumen"', 'C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Controllers\\Home.php', 65)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->buscar()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 21:24:02 --> Undefined array key "lib_resumen"
+in APPPATH\Controllers\Home.php on line 65.
+ 1 APPPATH\Controllers\Home.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "lib_resumen"', 'C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Controllers\\Home.php', 65)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->buscar()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 21:24:06 --> Undefined array key "lib_resumen"
+in APPPATH\Controllers\Home.php on line 65.
+ 1 APPPATH\Controllers\Home.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "lib_resumen"', 'C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Controllers\\Home.php', 65)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->buscar()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 21:24:28 --> Undefined array key "lib_resumen"
+in APPPATH\Controllers\Home.php on line 65.
+ 1 APPPATH\Controllers\Home.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "lib_resumen"', 'C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Controllers\\Home.php', 65)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->buscar()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 21:25:15 --> Undefined array key "lib_resumen"
+in APPPATH\Controllers\Home.php on line 65.
+ 1 APPPATH\Controllers\Home.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "lib_resumen"', 'C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Controllers\\Home.php', 65)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->buscar()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
