@@ -27,7 +27,7 @@
     </table>
 
     <!-- Buscador de libro por codigo -->
-    <form action="<?php echo base_url() . 'buscar' ?>" method="POST">
+    <form action="<?php echo base_url() . '../buscar' ?>" method="POST">
         <div class="mb-3">
             <label for="codigo" class="form-label">Codigo: </label>
             <input type="text" class="form-control" id="codigo" name="codigo">
