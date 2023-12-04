@@ -2,7 +2,9 @@
 
 namespace App\Controllers;
 
+use App\Models\librosModel;
 use App\Models\portadaModel;
+use App\Models\temaModel;
 
 class Home extends BaseController
 {
@@ -38,7 +40,14 @@ class Home extends BaseController
 
 		$sql = new portadaModel();
 		$libros = $sql->librosModel();
-		$msg = ["libros" => $libros];
+
+		/* tema */
+		$sql2 = new temaModel();
+		$temas = $sql2->listarTemas();
+
+
+		$msg = ["libros" => $libros, "temas" => $temas];
+
 
 
 		return view('layouts/header') . view('deber', $msg) . view('layouts/footer');
