@@ -27,7 +27,7 @@
     </table>
 
     <!-- Buscador de libro por codigo -->
-    <form action="<?php echo base_url() . '../buscar' ?>" method="POST">
+    <form action="<?php echo base_url() . '/buscar' ?>" method="POST">
         <div class="mb-3">
             <label for="codigo" class="form-label">Codigo: </label>
             <input type="text" class="form-control" id="codigo" name="codigo">
@@ -48,20 +48,22 @@
     </div>
     <div id="salida"></div>
     <script>
+        /* mostrar automaticamente en div al seleccionar */
         $(document).ready(function() {
-            $('#tema').change(function() {
-                var idTema = $('#tema').val();
+            $("#tema").change(function() {
+                var id = $("#tema").val();
+                //no redirigir
+                event.preventDefault();
                 $.ajax({
-                    /* mostrar en div */
-                    url: "<?php echo base_url() . '/buscarLibro' ?>",
-                    method: "POST",
+                    url: "<?php echo base_url() . '/tema' ?>",
+                    type: "POST",
+                    dataType: "json",
                     data: {
-                        idTema: idTema
+                        id: id
                     },
                     success: function(respuesta) {
-                        $('#salida').html(respuesta);
+                        $("#salida").html(respuesta);
                     }
-                    
                 });
             });
         });

@@ -1,6 +1,6 @@
 <main class="card m-4 p-5">
     <!-- volver -->
-    <a href="<?php echo base_url() . '../deber' ?>" class="btn btn-primary">Volver</a>
+    <a href="<?php echo base_url() . '/deber' ?>" class="btn btn-primary">Volver</a>
     
     <h1 class="text ">Busqueda</h1>
     <!-- Titulo y resumen post-->
