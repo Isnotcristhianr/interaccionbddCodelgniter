@@ -1,0 +1,806 @@
+ERROR - 2023-12-01 05:44:17 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /var/www/html/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'semana7', 3306, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR...', Array, false)
+#4 /var/www/html/app/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/app/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+#6 /var/www/html/system/CodeIgniter.php(942): App\Controllers\Home->index()
+#7 /var/www/html/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /var/www/html/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/html/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /var/www/html/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR...', Array, false)
+#3 /var/www/html/app/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+#4 /var/www/html/app/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+#5 /var/www/html/system/CodeIgniter.php(942): App\Controllers\Home->index()
+#6 /var/www/html/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /var/www/html/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/html/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-01 05:44:17 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR_TITULO`
+FROM `tbl_portada` `a`', [], false)
+ 3 APPPATH/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-01 05:46:26 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /var/www/html/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'semana7', 3306, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR...', Array, false)
+#4 /var/www/html/app/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/app/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+#6 /var/www/html/system/CodeIgniter.php(942): App\Controllers\Home->index()
+#7 /var/www/html/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /var/www/html/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/html/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /var/www/html/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR...', Array, false)
+#3 /var/www/html/app/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+#4 /var/www/html/app/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+#5 /var/www/html/system/CodeIgniter.php(942): App\Controllers\Home->index()
+#6 /var/www/html/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /var/www/html/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/html/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-01 05:46:26 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR_TITULO`
+FROM `tbl_portada` `a`', [], false)
+ 3 APPPATH/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-01 05:47:04 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /var/www/html/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'semana7', 3306, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR...', Array, false)
+#4 /var/www/html/app/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/app/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+#6 /var/www/html/system/CodeIgniter.php(942): App\Controllers\Home->index()
+#7 /var/www/html/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /var/www/html/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/html/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /var/www/html/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR...', Array, false)
+#3 /var/www/html/app/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+#4 /var/www/html/app/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+#5 /var/www/html/system/CodeIgniter.php(942): App\Controllers\Home->index()
+#6 /var/www/html/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /var/www/html/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/html/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-01 05:47:04 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR_TITULO`
+FROM `tbl_portada` `a`', [], false)
+ 3 APPPATH/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-01 05:47:05 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /var/www/html/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'semana7', 3306, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR...', Array, false)
+#4 /var/www/html/app/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/app/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+#6 /var/www/html/system/CodeIgniter.php(942): App\Controllers\Home->index()
+#7 /var/www/html/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /var/www/html/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/html/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /var/www/html/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR...', Array, false)
+#3 /var/www/html/app/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+#4 /var/www/html/app/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+#5 /var/www/html/system/CodeIgniter.php(942): App\Controllers\Home->index()
+#6 /var/www/html/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /var/www/html/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/html/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-01 05:47:05 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR_TITULO`
+FROM `tbl_portada` `a`', [], false)
+ 3 APPPATH/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-01 05:47:13 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /var/www/html/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'semana7', 3306, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR...', Array, false)
+#4 /var/www/html/app/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/app/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+#6 /var/www/html/system/CodeIgniter.php(942): App\Controllers\Home->index()
+#7 /var/www/html/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /var/www/html/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/html/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /var/www/html/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR...', Array, false)
+#3 /var/www/html/app/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+#4 /var/www/html/app/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+#5 /var/www/html/system/CodeIgniter.php(942): App\Controllers\Home->index()
+#6 /var/www/html/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /var/www/html/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/html/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-01 05:47:13 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR_TITULO`
+FROM `tbl_portada` `a`', [], false)
+ 3 APPPATH/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-01 05:48:01 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /var/www/html/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'semana7', 3306, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR...', Array, false)
+#4 /var/www/html/app/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/app/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+#6 /var/www/html/system/CodeIgniter.php(942): App\Controllers\Home->index()
+#7 /var/www/html/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /var/www/html/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/html/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /var/www/html/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR...', Array, false)
+#3 /var/www/html/app/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+#4 /var/www/html/app/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+#5 /var/www/html/system/CodeIgniter.php(942): App\Controllers\Home->index()
+#6 /var/www/html/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /var/www/html/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/html/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-01 05:48:01 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR_TITULO`
+FROM `tbl_portada` `a`', [], false)
+ 3 APPPATH/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-01 05:49:22 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /var/www/html/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'semana7', 3306, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR...', Array, false)
+#4 /var/www/html/app/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/app/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+#6 /var/www/html/system/CodeIgniter.php(942): App\Controllers\Home->index()
+#7 /var/www/html/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /var/www/html/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/html/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /var/www/html/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR...', Array, false)
+#3 /var/www/html/app/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+#4 /var/www/html/app/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+#5 /var/www/html/system/CodeIgniter.php(942): App\Controllers\Home->index()
+#6 /var/www/html/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /var/www/html/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/html/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-01 05:49:22 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR_TITULO`
+FROM `tbl_portada` `a`', [], false)
+ 3 APPPATH/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-01 05:49:59 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /var/www/html/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'semana7', 3306, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR...', Array, false)
+#4 /var/www/html/app/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/app/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+#6 /var/www/html/system/CodeIgniter.php(942): App\Controllers\Home->index()
+#7 /var/www/html/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /var/www/html/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/html/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /var/www/html/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR...', Array, false)
+#3 /var/www/html/app/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+#4 /var/www/html/app/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+#5 /var/www/html/system/CodeIgniter.php(942): App\Controllers\Home->index()
+#6 /var/www/html/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /var/www/html/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/html/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-01 05:49:59 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR_TITULO`
+FROM `tbl_portada` `a`', [], false)
+ 3 APPPATH/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-01 05:50:46 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /var/www/html/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'semana7', 3306, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR...', Array, false)
+#4 /var/www/html/app/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/app/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+#6 /var/www/html/system/CodeIgniter.php(942): App\Controllers\Home->index()
+#7 /var/www/html/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /var/www/html/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/html/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /var/www/html/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR...', Array, false)
+#3 /var/www/html/app/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+#4 /var/www/html/app/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+#5 /var/www/html/system/CodeIgniter.php(942): App\Controllers\Home->index()
+#6 /var/www/html/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /var/www/html/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/html/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-01 05:50:46 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR_TITULO`
+FROM `tbl_portada` `a`', [], false)
+ 3 APPPATH/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-01 05:54:02 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /var/www/html/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'semana7', 3306, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR...', Array, false)
+#4 /var/www/html/app/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/app/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+#6 /var/www/html/system/CodeIgniter.php(942): App\Controllers\Home->index()
+#7 /var/www/html/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /var/www/html/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/html/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /var/www/html/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR...', Array, false)
+#3 /var/www/html/app/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+#4 /var/www/html/app/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+#5 /var/www/html/system/CodeIgniter.php(942): App\Controllers\Home->index()
+#6 /var/www/html/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /var/www/html/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/html/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-01 05:54:02 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR_TITULO`
+FROM `tbl_portada` `a`', [], false)
+ 3 APPPATH/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-01 05:58:26 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /var/www/html/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'semana7', 3306, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR...', Array, false)
+#4 /var/www/html/app/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/app/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+#6 /var/www/html/system/CodeIgniter.php(942): App\Controllers\Home->index()
+#7 /var/www/html/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /var/www/html/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/html/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /var/www/html/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR...', Array, false)
+#3 /var/www/html/app/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+#4 /var/www/html/app/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+#5 /var/www/html/system/CodeIgniter.php(942): App\Controllers\Home->index()
+#6 /var/www/html/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /var/www/html/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/html/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-01 05:58:26 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR_TITULO`
+FROM `tbl_portada` `a`', [], false)
+ 3 APPPATH/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-01 05:59:25 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /var/www/html/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'semana7', 3306, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR...', Array, false)
+#4 /var/www/html/app/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/app/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+#6 /var/www/html/system/CodeIgniter.php(942): App\Controllers\Home->index()
+#7 /var/www/html/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /var/www/html/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/html/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /var/www/html/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR...', Array, false)
+#3 /var/www/html/app/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+#4 /var/www/html/app/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+#5 /var/www/html/system/CodeIgniter.php(942): App\Controllers\Home->index()
+#6 /var/www/html/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /var/www/html/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/html/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-01 05:59:25 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR_TITULO`
+FROM `tbl_portada` `a`', [], false)
+ 3 APPPATH/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-01 06:00:03 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /var/www/html/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'semana7', 3306, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR...', Array, false)
+#4 /var/www/html/app/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/app/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+#6 /var/www/html/system/CodeIgniter.php(942): App\Controllers\Home->index()
+#7 /var/www/html/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /var/www/html/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/html/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /var/www/html/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR...', Array, false)
+#3 /var/www/html/app/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+#4 /var/www/html/app/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+#5 /var/www/html/system/CodeIgniter.php(942): App\Controllers\Home->index()
+#6 /var/www/html/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /var/www/html/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/html/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-01 06:00:03 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR_TITULO`
+FROM `tbl_portada` `a`', [], false)
+ 3 APPPATH/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-01 06:00:11 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /var/www/html/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'semana7', 3306, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR...', Array, false)
+#4 /var/www/html/app/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/app/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+#6 /var/www/html/system/CodeIgniter.php(942): App\Controllers\Home->index()
+#7 /var/www/html/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /var/www/html/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/html/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /var/www/html/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR...', Array, false)
+#3 /var/www/html/app/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+#4 /var/www/html/app/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+#5 /var/www/html/system/CodeIgniter.php(942): App\Controllers\Home->index()
+#6 /var/www/html/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /var/www/html/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/html/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-01 06:00:11 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR_TITULO`
+FROM `tbl_portada` `a`', [], false)
+ 3 APPPATH/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-01 06:00:56 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /var/www/html/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(185): mysqli->real_connect('localhost', 'root', 'root', 'semana7', 3306, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR...', Array, false)
+#4 /var/www/html/app/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/app/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+#6 /var/www/html/system/CodeIgniter.php(942): App\Controllers\Home->index()
+#7 /var/www/html/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /var/www/html/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/html/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /var/www/html/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR...', Array, false)
+#3 /var/www/html/app/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+#4 /var/www/html/app/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+#5 /var/www/html/system/CodeIgniter.php(942): App\Controllers\Home->index()
+#6 /var/www/html/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /var/www/html/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/html/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-01 06:00:56 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR_TITULO`
+FROM `tbl_portada` `a`', [], false)
+ 3 APPPATH/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-01 06:02:03 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /var/www/html/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(185): mysqli->real_connect('localhost', 'root', 'root', 'semana7', 3306, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR...', Array, false)
+#4 /var/www/html/app/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/app/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+#6 /var/www/html/system/CodeIgniter.php(942): App\Controllers\Home->index()
+#7 /var/www/html/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /var/www/html/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/html/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /var/www/html/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR...', Array, false)
+#3 /var/www/html/app/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+#4 /var/www/html/app/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+#5 /var/www/html/system/CodeIgniter.php(942): App\Controllers\Home->index()
+#6 /var/www/html/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /var/www/html/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/html/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-01 06:02:03 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR_TITULO`
+FROM `tbl_portada` `a`', [], false)
+ 3 APPPATH/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-01 15:07:12 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /var/www/html/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(185): mysqli->real_connect('localhost', 'root', 'root', 'semana7', 3306, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR...', Array, false)
+#4 /var/www/html/app/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/app/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+#6 /var/www/html/system/CodeIgniter.php(942): App\Controllers\Home->index()
+#7 /var/www/html/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /var/www/html/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/html/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /var/www/html/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR...', Array, false)
+#3 /var/www/html/app/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+#4 /var/www/html/app/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+#5 /var/www/html/system/CodeIgniter.php(942): App\Controllers\Home->index()
+#6 /var/www/html/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /var/www/html/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/html/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-01 15:07:12 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR_TITULO`
+FROM `tbl_portada` `a`', [], false)
+ 3 APPPATH/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-01 21:19:31 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /var/www/html/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(185): mysqli->real_connect('localhost', 'root', 'root', 'semana7', 3306, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR...', Array, false)
+#4 /var/www/html/app/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/app/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+#6 /var/www/html/system/CodeIgniter.php(942): App\Controllers\Home->index()
+#7 /var/www/html/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /var/www/html/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/html/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /var/www/html/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR...', Array, false)
+#3 /var/www/html/app/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+#4 /var/www/html/app/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+#5 /var/www/html/system/CodeIgniter.php(942): App\Controllers\Home->index()
+#6 /var/www/html/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /var/www/html/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/html/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-01 21:19:31 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR_TITULO`
+FROM `tbl_portada` `a`', [], false)
+ 3 APPPATH/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-01 21:23:01 --> Error connecting to the database: mysqli_sql_exception: Cannot assign requested address in /var/www/html/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(185): mysqli->real_connect('localhost:8081', 'root', 'root', 'semana7', 3306, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR...', Array, false)
+#4 /var/www/html/app/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/app/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+#6 /var/www/html/system/CodeIgniter.php(942): App\Controllers\Home->index()
+#7 /var/www/html/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /var/www/html/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/html/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Cannot assign requested address in /var/www/html/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR...', Array, false)
+#3 /var/www/html/app/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+#4 /var/www/html/app/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+#5 /var/www/html/system/CodeIgniter.php(942): App\Controllers\Home->index()
+#6 /var/www/html/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /var/www/html/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/html/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-01 21:23:01 --> Unable to connect to the database.
+Main connection [MySQLi]: Cannot assign requested address
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR_TITULO`
+FROM `tbl_portada` `a`', [], false)
+ 3 APPPATH/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-01 21:23:39 --> mysqli_sql_exception: Table 'semana7.tbl_portada' doesn't exist in /var/www/html/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `a`.`POR...', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`POR...')
+#2 /var/www/html/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`POR...')
+#3 /var/www/html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR...', Array, false)
+#4 /var/www/html/app/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/app/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+#6 /var/www/html/system/CodeIgniter.php(942): App\Controllers\Home->index()
+#7 /var/www/html/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /var/www/html/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/html/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-01 21:23:39 --> Table 'semana7.tbl_portada' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR_TITULO`
+FROM `tbl_portada` `a`', [], false)
+ 2 APPPATH/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-01 21:30:07 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(185): mysqli->real_connect('mysql', 'root', 'root', 'semana7', 3306, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR...', Array, false)
+#4 /var/www/html/app/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/app/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+#6 /var/www/html/system/CodeIgniter.php(942): App\Controllers\Home->index()
+#7 /var/www/html/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /var/www/html/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/html/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /var/www/html/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR...', Array, false)
+#3 /var/www/html/app/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+#4 /var/www/html/app/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+#5 /var/www/html/system/CodeIgniter.php(942): App\Controllers\Home->index()
+#6 /var/www/html/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /var/www/html/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/html/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-01 21:30:07 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR_TITULO`
+FROM `tbl_portada` `a`', [], false)
+ 3 APPPATH/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-01 21:30:37 --> mysqli_sql_exception: Table 'semana7.tbl_portada' doesn't exist in /var/www/html/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `a`.`POR...', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`POR...')
+#2 /var/www/html/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`POR...')
+#3 /var/www/html/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR...', Array, false)
+#4 /var/www/html/app/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/app/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+#6 /var/www/html/system/CodeIgniter.php(942): App\Controllers\Home->index()
+#7 /var/www/html/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /var/www/html/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/html/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-01 21:30:37 --> Table 'semana7.tbl_portada' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`POR_TITULO`
+FROM `tbl_portada` `a`', [], false)
+ 2 APPPATH/Models/portadaModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/Home.php(15): App\Models\portadaModel->tituloModel()
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,33 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    ports:
+      - "8080:80"
+    depends_on:
+      - mysql
+      - phpmyadmin
+    volumes:
+      - .:/var/www/html
+
+  mysql:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: semana7
+    ports:
+      - "3306:3306"
+
+  phpmyadmin:
+    build:
+      context: .
+      dockerfile: Dockerfile-phpmyadmin
+    ports:
+      - "8081:80"
+    environment:
+      PMA_HOST: mysql
+
+volumes:
+  mysql:
+
