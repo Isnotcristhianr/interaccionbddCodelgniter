@@ -36,33 +36,31 @@
     </form>
 
     <!-- ListBox dinamico muestra tema-->
-    <!-- con ajax -->
     <div class="mb-3">
-        <label for="tema" class="form-label">Tema: </label>
-        <select class="form-select" id="tema" name="tema">
-            <option value="0">Seleccione un tema</option>
-            <?php foreach ($temas as $t) { ?>
-                <option value="<?php echo $t['tem_id']; ?>"><?php echo $t['tem_tema']; ?></option>
-            <?php } ?>
-        </select>
+        <form action="<?php echo base_url() . '/obtenerLibros' ?>" method="POST">
+            <label for="tema" class="form-label">Tema: </label>
+            <select class="form-select" id="tema" name="tema">
+                <option value="0">Seleccione un tema</option>
+                <?php foreach ($temas as $t) { ?>
+                    <option value="<?php echo $t['tem_id']; ?>"><?php echo $t['tem_tema']; ?></option>
+                <?php } ?>
+            </select>
+        </form>
     </div>
     <div id="salida"></div>
     <script>
-        /* mostrar automaticamente en div al seleccionar */
+        /* obtener tema y mostrar libros */
         $(document).ready(function() {
-            $("#tema").change(function() {
-                var id = $("#tema").val();
-                //no redirigir
-                event.preventDefault();
+            $('#tema').change(function() {
+                var id = $(this).val();
                 $.ajax({
-                    url: "<?php echo base_url() . '/tema' ?>",
-                    type: "POST",
-                    dataType: "json",
+                    url: "<?php echo base_url() . '/obtenerLibros' ?>",
+                    method: "POST",
                     data: {
                         id: id
                     },
-                    success: function(respuesta) {
-                        $("#salida").html(respuesta);
+                    success: function(data) {
+                        $('#salida').html(data);
                     }
                 });
             });
