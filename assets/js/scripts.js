@@ -3,13 +3,13 @@ $(document).ready(function() {
         var id = $(this).val();
         console.log(id);
         $.ajax({
-            url: "<?php echo base_url(); ?>/obtenerLibros",
+            url: "obtenerLibros",
             method: "POST",
             data: {
                 id: id
             },
             success: function(data) {
-                $('#salida').html(data);
+                $('#salida').innerHTML = data;
             }
         });
     });
