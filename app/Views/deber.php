@@ -35,46 +35,32 @@
         <button type="submit" class="btn btn-primary">Buscar</button>
     </form>
 
-    <!-- ListBox dinamico muestra tema-->
+    <!-- ListBox dinámico muestra tema-->
     <div class="mb-3">
-        <form action="<?php echo base_url() . '/obtenerLibros' ?>" method="POST">
-            <label for="tema" class="form-label">Tema: </label>
-            <select class="form-select" id="tema" name="tema">
-                <option value="0">Seleccione un tema</option>
-                <?php foreach ($temas as $t) { ?>
-                    <option value="<?php echo $t['tem_id']; ?>"><?php echo $t['tem_tema']; ?></option>
-                <?php } ?>
-            </select>
-        </form>
+        <label for="tema" class="form-label">Tema: </label>
+        <select class="form-select" id="tema" name="tema">
+            <option value="0">Seleccione un tema</option>
+            <?php foreach ($temas as $t) { ?>
+                <option value="<?php echo $t['tem_id']; ?>"><?php echo $t['tem_tema']; ?></option>
+            <?php } ?>
+        </select>
     </div>
+    
     <div id="salida"></div>
-    <script>
-        /* obtener tema y mostrar libros */
-        $(document).ready(function() {
-            $('#tema').change(function() {
-                var id = $(this).val();
-                $.ajax({
-                    url: "<?php echo base_url() . '/obtenerLibros' ?>",
-                    method: "POST",
-                    data: {
-                        id: id
-                    },
-                    success: function(data) {
-                        $('#salida').html(data);
-                    }
-                });
-            });
-        });
-    </script>
 
-    <!-- js -->
+   <!-- js -->
+    <!-- Incluir jQuery antes de cualquier otro script que lo utilice -->
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script>
+
     <!-- DataTable -->
     <script>
         $(document).ready(function() {
             $('#tbl1').DataTable();
         });
     </script>
+
+    <!-- Script para obtener tema y mostrar libros -->
+    <script src="<?php echo base_url().'./assets/js/scripts.js'?>"></script>
 </main>

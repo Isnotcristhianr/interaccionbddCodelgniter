@@ -26,4 +26,21 @@ class temaModel extends Model
     
             return $resp;
         }
+
+        //buscar libro por id
+        function buscarLibro($id)
+        {
+            $builder = $this->db->table('tbl_libros a');
+    
+            $builder->select('c.lib_titulo');
+
+            $builder->join('tbl_tema b', 'a.tem_id=b.tem_id');
+            $builder->join('tbl_libros c', 'a.lib_id=c.lib_id');
+            $builder->where('b.tem_id', $id);
+
+            $query = $builder->get();
+            $resp = $query->getResultArray();
+    
+            return $resp;
+        }
 }

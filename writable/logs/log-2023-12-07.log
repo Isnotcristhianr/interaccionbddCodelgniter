@@ -1,0 +1,76 @@
+CRITICAL - 2023-12-07 00:30:26 --> Undefined array key "id"
+in APPPATH\Controllers\Home.php on line 86.
+ 1 APPPATH\Controllers\Home.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\proyectoTresBdd\\app\\Controllers\\Home.php', 86)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->obtenerLibros()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-07 00:33:18 --> mysqli_sql_exception: Table 'semana7.tbl_libt' doesn't exist in C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `a`.`lib...', 0)
+#1 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`lib...')
+#2 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`lib...')
+#3 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`lib...', Array, false)
+#4 C:\xampp\htdocs\proyectoTresBdd\app\Controllers\Home.php(102): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(942): App\Controllers\Home->obtenerLibros()
+#6 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\proyectoTresBdd\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-07 00:33:18 --> Table 'semana7.tbl_libt' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`lib_id`, `a`.`lib_titulo`, `a`.`lib_codigo`, `a`.`lib_precio`, `a`.`lib_resumen`, `b`.`tem_tema`
+FROM `tbl_libros` `a`
+JOIN `tbl_tema` `b` ON `a`.`tem_id`=`b`.`tem_id`
+JOIN `tbl_libt` `c` ON `a`.`lib_id`=`c`.`lib_id`', [], false)
+ 2 APPPATH\Controllers\Home.php(102): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->obtenerLibros()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-07 00:33:20 --> mysqli_sql_exception: Table 'semana7.tbl_libt' doesn't exist in C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `a`.`lib...', 0)
+#1 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`lib...')
+#2 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`lib...')
+#3 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`lib...', Array, false)
+#4 C:\xampp\htdocs\proyectoTresBdd\app\Controllers\Home.php(102): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(942): App\Controllers\Home->obtenerLibros()
+#6 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\proyectoTresBdd\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-07 00:33:20 --> Table 'semana7.tbl_libt' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`lib_id`, `a`.`lib_titulo`, `a`.`lib_codigo`, `a`.`lib_precio`, `a`.`lib_resumen`, `b`.`tem_tema`
+FROM `tbl_libros` `a`
+JOIN `tbl_tema` `b` ON `a`.`tem_id`=`b`.`tem_id`
+JOIN `tbl_libt` `c` ON `a`.`lib_id`=`c`.`lib_id`', [], false)
+ 2 APPPATH\Controllers\Home.php(102): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->obtenerLibros()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-07 00:33:22 --> mysqli_sql_exception: Table 'semana7.tbl_libt' doesn't exist in C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\proyectoTresBdd\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `a`.`lib...', 0)
+#1 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`lib...')
+#2 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`lib...')
+#3 C:\xampp\htdocs\proyectoTresBdd\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`lib...', Array, false)
+#4 C:\xampp\htdocs\proyectoTresBdd\app\Controllers\Home.php(102): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(942): App\Controllers\Home->obtenerLibros()
+#6 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\proyectoTresBdd\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\proyectoTresBdd\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-07 00:33:22 --> Table 'semana7.tbl_libt' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`lib_id`, `a`.`lib_titulo`, `a`.`lib_codigo`, `a`.`lib_precio`, `a`.`lib_resumen`, `b`.`tem_tema`
+FROM `tbl_libros` `a`
+JOIN `tbl_tema` `b` ON `a`.`tem_id`=`b`.`tem_id`
+JOIN `tbl_libt` `c` ON `a`.`lib_id`=`c`.`lib_id`', [], false)
+ 2 APPPATH\Controllers\Home.php(102): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->obtenerLibros()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

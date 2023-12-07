@@ -1,7 +1,16 @@
-/*!
-* Start Bootstrap - Personal v1.0.1 (https://startbootstrap.com/template-overviews/personal)
-* Copyright 2013-2023 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-personal/blob/master/LICENSE)
-*/
-// This file is intentionally blank
-// Use this file to add JavaScript to your project
+$(document).ready(function() {
+    $('#tema').change(function() {
+        var id = $(this).val();
+        console.log(id);
+        $.ajax({
+            url: "<?php echo base_url(); ?>/obtenerLibros",
+            method: "POST",
+            data: {
+                id: id
+            },
+            success: function(data) {
+                $('#salida').html(data);
+            }
+        });
+    });
+});
