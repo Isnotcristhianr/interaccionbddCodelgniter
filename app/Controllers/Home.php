@@ -5,6 +5,7 @@ namespace App\Controllers;
 use App\Models\librosModel;
 use App\Models\portadaModel;
 use App\Models\temaModel;
+use CodeIgniter\CLI\Console;
 
 class Home extends BaseController
 {
