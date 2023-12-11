@@ -45,12 +45,38 @@
             <?php } ?>
         </select>
     </div>
-    
+
     <div id="salida"></div>
 
-   <!-- js -->
     <!-- Incluir jQuery antes de cualquier otro script que lo utilice -->
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script>
+        /* ajax seleciono tema muestro div tema */
+        $(document).ready(function() {
+            $('#tema').change(function() {
+                var tema = $('#tema').val();
+                console.log(tema);
+              
+                $.ajax({
+                    url: "<?php echo base_url() . 'obtenerLibros' ?>",
+                    method: "POST",
+                    data: {
+                        tema: tema
+                    },
+                    success: function(data) {
+                        $('#salida').html(data);
+                    },
+                    error: function(xhr, status, error) {
+                        console.error(xhr.responseText);
+                    }
+                });
+
+            });
+        });
+    </script>
+
+    <!-- js -->
+
     <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script>
 
@@ -62,5 +88,5 @@
     </script>
 
     <!-- Script para obtener tema y mostrar libros -->
-    <script src="<?php echo base_url().'./assets/js/scripts.js'?>"></script>
+    <!--   <script src="<?php echo base_url() . './assets/js/scripts.js' ?>"></script> -->
 </main>

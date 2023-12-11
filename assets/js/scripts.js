@@ -1,4 +1,4 @@
-$(document).ready(function() {
+/* $(document).ready(function() {
     $('#tema').change(function() {
         var id = $(this).val();
         console.log(id);
@@ -13,4 +13,4 @@ $(document).ready(function() {
             }
         });
     });
-});
+}); */

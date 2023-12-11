@@ -83,28 +83,31 @@ class Home extends BaseController
 	//temas
 	public function obtenerLibros()
 	{
-		$id = $_POST['id'];
 
-		 /* unir 3 tablas, 2 normales 1 intermedia */
-		 $db = \Config\Database::connect();
-		 $builder = $db->table('tbl_libros a');
-		 
-		 $builder->select(
-			 'a.lib_id,
+		header('Content-Type: text/plain');
+
+		$id = $_POST['tema'];
+
+		/* unir 3 tablas, 2 normales 1 intermedia */
+		$db = \Config\Database::connect();
+		$builder = $db->table('tbl_libros a');
+
+		$builder->select(
+			'a.lib_id,
 			 a.lib_titulo,
 			 a.lib_codigo,
 			 a.lib_precio,
 			 a.lib_resumen,
 			 b.tem_tema'
-		 );
-		 $builder->join('tbl_tema b', 'a.tem_id=b.tem_id');
-		 $builder->join('tbl_libt c', 'a.lib_id=c.lib_id');
-		 $query = $builder->get();
-		 $libros = $query->getResultArray();
+		);
+		$builder->join('tbl_tema b', 'a.tem_id=b.tem_id');
+		$builder->join('tbl_libros c', 'a.lib_id=c.lib_id');
+		$query = $builder->get();
+		$libros = $query->getResultArray();
 
 		$resp = "";
 		foreach ($libros as $l) {
-			if ($l['tem_id'] == $id) {
+			if ($l['lib_id'] == $id) {
 				$resp .= "<p>" . $l['lib_titulo'] . "</p>";
 			}
 		}

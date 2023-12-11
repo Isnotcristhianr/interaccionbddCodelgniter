@@ -13,5 +13,5 @@ $routes->get('/deber', 'Home::libros');
 //buscador
 $routes->post('/buscar', 'Home::buscar');
 
-//temas
+//temas ajax
 $routes->post('/obtenerLibros', 'Home::obtenerLibros');
