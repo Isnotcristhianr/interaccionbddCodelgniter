@@ -57,7 +57,7 @@
             </tr>
         </thead>
         <tbody>
-               
+
         </tbody>
     </table>
 
@@ -83,14 +83,9 @@
                         /* colocar datos en la tabla */
                         $tabla = $('#tabla');
                         $tabla.find('tbody').empty();
-                        $tabla.find('tbody').append(data
-                        ,
-                        '<tr><td><input type="text" class="form-control" id="titulo" name="titulo"></td><td><button type="button" class="btn btn-primary" id="actualizar">Actualizar</button></td></tr>'
-                        
+                        $tabla.find('tbody').append(data,
+                            '<tr><td><input type="text" class="form-control" id="titulo" name="titulo"></td><td><button type="button" class="btn btn-primary" id="actualizar">Actualizar</button></td></tr>'
                         );
-
-
-
                     },
                     error: function(xhr, status, error) {
                         console.error(xhr.responseText);
