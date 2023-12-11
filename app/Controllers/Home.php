@@ -115,4 +115,23 @@ class Home extends BaseController
 
 		return $resp;
 	}
+
+	//update
+	public function actualizar()
+	{
+		$id = $_POST['id'];
+		$titulo = $_POST['titulo'];
+		$codigo = $_POST['codigo'];
+		$precio = $_POST['precio'];
+		$resumen = $_POST['resumen'];
+
+		$sql = new librosModel();
+		$resp = $sql->actualizarModel($id, $titulo, $codigo, $precio, $resumen);
+
+		if ($resp > 0) {
+			echo "Libro actualizado";
+		} else {
+			echo "Error al actualizar";
+		}
+	}
 }

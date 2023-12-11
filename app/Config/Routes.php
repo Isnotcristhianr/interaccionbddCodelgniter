@@ -15,3 +15,6 @@ $routes->post('/buscar', 'Home::buscar');
 
 //temas ajax
 $routes->post('/obtenerLibros', 'Home::obtenerLibros');
+
+//update ajax
+$routes->post('/actualizar', 'Home::actualizar');

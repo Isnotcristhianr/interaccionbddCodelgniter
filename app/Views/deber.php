@@ -48,6 +48,19 @@
 
     <div id="salida"></div>
 
+    <!-- tabla del inner join se muestra tema y libro relacionado -->
+    <table class="table table-striped table-hover" id="tabla">
+        <thead>
+            <tr>
+                <th scope="col">Titulo</th>
+                <th scope="col">Editar</th>
+            </tr>
+        </thead>
+        <tbody>
+               
+        </tbody>
+    </table>
+
     <!-- Incluir jQuery antes de cualquier otro script que lo utilice -->
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script>
@@ -56,15 +69,28 @@
             $('#tema').change(function() {
                 var tema = $('#tema').val();
                 console.log(tema);
-              
+
                 $.ajax({
                     url: "<?php echo base_url() . 'obtenerLibros' ?>",
                     method: "POST",
                     data: {
-                        tema: tema
+                        tema: tema,
                     },
                     success: function(data) {
                         $('#salida').html(data);
+                        console.log(data);
+
+                        /* colocar datos en la tabla */
+                        $tabla = $('#tabla');
+                        $tabla.find('tbody').empty();
+                        $tabla.find('tbody').append(data
+                        ,
+                        '<tr><td><input type="text" class="form-control" id="titulo" name="titulo"></td><td><button type="button" class="btn btn-primary" id="actualizar">Actualizar</button></td></tr>'
+                        
+                        );
+
+
+
                     },
                     error: function(xhr, status, error) {
                         console.error(xhr.responseText);
